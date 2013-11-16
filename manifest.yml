@@ -1,0 +1,14 @@
+---
+applications:
+- name: drfdcm
+  memory: 128M
+  instances: 1
+  host: drfdcm
+  domain: cfapps.io
+  path: dist/todo-1.0-SNAPSHOT.zip
+  services:
+    elephantsql-888f7:
+      label: elephantsql
+      provider: elephantsql
+      version: n/a
+      plan: turtle
